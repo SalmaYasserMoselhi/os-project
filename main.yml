@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mycard
+spec:
+  selector:
+    matchLabels:
+      app: my-website
+  replicas: 3
+  template:
+    metadata:
+      name: my-website
+      labels:
+        app: my-website
+    spec:
+      containers:
+        - name: myimg-container
+          image: saloma8/nginx-test
+          imagePullPolicy: IfNotPresent 
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "1"

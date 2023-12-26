@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <style>
+                    *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+            body{
+                background: linear-gradient(45deg, #0a3977, #4f6c94, #0a3977);
+                font-family: 'poppins', Tahoma, sans-serif;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .card{
+                background-color: #fff;
+                width: 400px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                border-radius: 20px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            }
+            .card-background-img img{
+                width: 100%;
+                height: 150px;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+                object-fit: cover;
+            }
+            .profile-card-img img{
+                width: 150px;
+                height: 150px;
+                display: block;
+                margin: -80px auto 0;
+                border-radius: 50%;
+                border: 5px solid white;
+            }
+            .profile-card-img img:hover{
+                transform: scale(1.05);
+                transition-duration: 0.5s;
+            }
+            .card-content{
+                text-align: center;
+            }
+            .card-content h2{
+                color: #083262;
+            }
+            .card-content h3{
+                color: #38557d;
+            }
+            .card-content p{
+                font-size: 16px; 
+                padding: 5px 20px;
+                color: #0a3977;
+            }
+            .social-icons{
+                padding: 10px 0;
+            }
+            .social-icons a{
+                text-decoration: none;
+                color: #083262;
+                font-size: 20px;
+                padding: 0 5px;
+            }
+            .social-icons a:hover{
+                transform: scale(1.5);
+                transition-duration: 0.5s;
+                color: #3e5779;
+            }
+        </style>
+        <title>Profile Card</title>
+    </head>
+    <body>
+        <div class="card">
+            <!-- <div class="card-background-img" style="background-color: #061a31;">
+                <img src="images/background-img.jpg" alt="background image" width="400px">
+            </div>
+            <div class="profile-card-img" style="background-color: #265489;">
+                <img src="images/profile-img.jpeg" alt="profile-card image">
+            </div> -->
+            <div class="card-content">
+                <h2>Anne Cherly</h2>
+                <h3>Front-End Developer</h3>
+                <p>Passionate about crafting pixel-perfect user interfaces that dazzle and delight. With a strong command of HTML, CSS, and JavaScript, I transform design concepts into interactive, responsive websites and web applications. A creative problem solver with a keen eye for design aesthetics and a dedication to delivering seamless user experiences. Let's turn your web dreams into reality together!</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" class="fa-brands fa-facebook" target="_blank"></a>
+                    <a href="https://www.twitter.com" class="fa-brands fa-twitter" target="_blank"></a>
+                    <a href="https://www.instagram.com" class="fa-brands fa-instagram" target="_blank"></a>
+                    <a href="https://www.linkedin.com" class="fa-brands fa-linkedin" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
